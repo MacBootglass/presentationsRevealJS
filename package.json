@@ -1,0 +1,25 @@
+{
+  "name": "presentations-reveal.js",
+  "version": "1.0.0",
+  "description": "Quelques presentations personnelles à l'aide de la librairie Reveal.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MacBootglass/presentationsRevealJS.git"
+  },
+  "author": "Thibault Théologien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacBootglass/presentationsRevealJS/issues"
+  },
+  "homepage": "https://github.com/MacBootglass/presentationsRevealJS#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "reveal.js": "^3.3.0"
+  }
+}
