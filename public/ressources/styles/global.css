@@ -1,0 +1,55 @@
+.titre {
+  font-size: 300% !important;
+}
+
+.formuleAndDef {
+  margin-top: 50px !important;
+}
+
+.definition {
+  text-align: left;
+}
+
+.sourceDefinition {
+  float: right;
+  font-style: italic !important;
+}
+
+.warning {
+  height: 40px;
+  width: auto;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+  margin-right: 10px!important;
+  margin-left: 0px!important;
+  border-width: 0px !important;
+  background-color: transparent !important;
+  vertical-align: bottom !important;
+}
+
+.credit{
+  width: 100%;
+  position:fixed !important;
+  bottom: 0px !important;
+  font-size: 20px !important;
+}
+
+.author{
+  margin: 10px !important;
+  float:right;
+}
+
+.school{
+  margin: 10px !important;
+  float:left;
+}
+
+/* Redifinition */
+.slide-number{
+  position: absolute;
+  height: 0px;
+  top:10px;
+  background-color: inherit !important;
+  font-size: 20px !important;
+  color: inherit !important;
+}
