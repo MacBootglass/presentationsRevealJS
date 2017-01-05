@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var opener = require('opener');
 var port = 3000;
 
 app.use("/opticalflow", express.static('public/presentations/opticalflow'));
@@ -14,3 +15,5 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log('Server listening on port ' + port + '!')
 });
+
+opener('http://localhost:' + port + '/opticalflow');
