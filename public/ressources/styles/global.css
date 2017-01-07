@@ -1,5 +1,5 @@
 .titre {
-  font-size: 300% !important;
+  font-size: 250% !important;
 }
 
 .formuleAndDef {
@@ -50,6 +50,6 @@
   height: 0px;
   top:10px;
   background-color: inherit !important;
-  font-size: 20px !important;
+  font-size: 30px !important;
   color: inherit !important;
 }
