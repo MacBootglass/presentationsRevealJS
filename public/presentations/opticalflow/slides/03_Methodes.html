@@ -6,7 +6,11 @@
   <section>
     <h3>Méthode de Horn Schunck</h3>
     <ul>
-      <li>Exploite la contrainte de régularité pour résoudre le problème d'ouverture</li>
+      <li class="fragment">Méthode différentielle</li>
+      <li class="fragment">Exploite la contrainte de régularité pour résoudre le problème d'ouverture</li>
+      <li class="fragment">Contrainte de régularité considérée sur l'ensemble de l'image => <span class="bold">minimise les distortions</span></li>
+      <li class="fragment">Produit des vecteurs de flux denses => <span class="bold">flux d'informations manquants dans les parties internes des éléments homogènes remplis à partir des mouvements sur leurs frontières</span></li>
+      <li class="fragment">Sensible au bruit</li>
     </ul>
   </section>
   <section>
@@ -26,6 +30,22 @@
 
   <section>
     <h3>Méthode de Lucas Kanade</h3>
+    <ul>
+      <li class="fragment">Méthode différentielle</li>
+      <li class="fragment">Suppose que le flux est majoritairement constant dans le voisinage local du pixel considéré</li>
+      <li class="fragment">Résolution par la méthode des moindres carrés</li>
+      <li class="fragment">La combinaison des informations des pixels avoisinants permet souvent de résoudre le problème d'ouverture</li>
+      <li class="fragment">Suppose un faible déplacement relativement constant des points étudiés entre deux images consécutives</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Améliorations et extentions de cette méthode</h4>
+    <ul>
+      <li class="fragment">Analyse statistique pour détécter et réduire le poids des erreurs implicitement liées à la méthode des moindres carrés</li>
+      <li class="fragment">Si le déplacement des points étudiés et trop important, réutilisation de Lucas-Kanade sur une version réduite des images, ou extrapolation du déplacement calculé, afin de raffiner des estimations grossières</li>
+    </ul>
+  </section>
+  <section>
     <img src="http://docs.opencv.org/trunk/opticalflow_lk.jpg" alt="exampleLucasKanade">
     <div class="italic">Exemple de resultat obtenu à l'aide de la méthode de Lucas-Kanade</div>
   </section>
@@ -37,7 +57,7 @@
   <section>
     <h3>Méthode de Farneback</h3>
     <img class="colG image" src="http://docs.opencv.org/trunk/opticalfb.jpg" alt="exampleFarneback">
-    <div id="alignMiddle" class="colD italic">Exemple de resultat obtenu à l'aide de la méthode de Lucas Kanade</div>
+    <div id="alignMiddle" class="colD italic">Exemple de resultat obtenu à l'aide de la méthode de Lucas-Kanade</div>
   </section>
   <section>
     <img src="https://cdn.meme.am/cache/instances/folder28/500x/61085028.jpg" alt="demonstrationMeme3">
