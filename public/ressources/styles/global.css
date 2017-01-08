@@ -46,12 +46,14 @@
 
 .colD {
   width: 50%;
-  float:right;
+  float: right;
+  text-align: center;
 }
 
 .colG {
   width: 50%;
   float: left;
+  text-align: center;
 }
 
 .italic {
@@ -63,12 +65,19 @@
 }
 
 .image {
-  height: 45%;
-  width: 45%;
+  height: 40%;
+  width: 40%;
 }
 
 .tabulation {
   padding-left: 50px;
+}
+
+#alignMiddle:before {
+  height: 200px;
+  content: "";
+  width: 100%;
+  display: block;
 }
 
 /* Redifinition */
