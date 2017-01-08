@@ -22,5 +22,5 @@ $ npm install
 $ npm start
 ```
 
-## Présentations disponible
+## Démonstrations disponible
 * [OpticalFlow](https://github.com/MacBootglass/presentationsRevealJS/tree/master/public/presentations/opticalflow) -> cliquer [ici](https://github.com/MacBootglass/opticalflow-opencv3-examples) afin d'accéder aux démonstrations.
