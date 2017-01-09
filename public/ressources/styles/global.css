@@ -73,6 +73,11 @@
   padding-left: 50px;
 }
 
+.text {
+  text-align: justify;
+  width: 90%;
+}
+
 #alignMiddle:before {
   height: 200px;
   content: "";

@@ -13,15 +13,60 @@
 
   <section>
     <h3>Contrainte de régularité</h3><br/>
-    <span class="italic">(Smoothness Constraint)</span>
+    <div class="italic">(Smoothness Constraint)</div>
+  </section>
+  <section>
+    <ul>
+      <li>Contrainte de texture lisse/régulière</li>
+      <li class="fragment">Formule de minimisation du carré de la grandeur du gradient de la vitesse du flux optique</li>
+      <li class="fragment">Somme des carrés des Laplaciens des composantes x et y du flux</li>
+    </ul>
+  </section>
+  <section>
+    <ul>
+      <li>
+        $(\frac{\delta u}{\delta x})^2 + (\frac{\delta u}{\delta y})^2$
+        et
+        $(\frac{\delta u}{\delta v})^2 + (\frac{\delta u}{\delta x})^2$
+      </li>
+      <li>
+        $\bigtriangledown^2u = \frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2}$
+        et
+        $\bigtriangledown^2v = \frac{\delta^2 v}{\delta x^2} + \frac{\delta^2 v}{\delta y^2}$
+      </li>
+      <li>
+        $\frac{\delta I}{\delta t} = 0$
+      </li>
+      <li>
+        $\frac{\delta I}{\delta x} \times  \frac{\delta x}{\delta t} +  \frac{\delta I}{\delta y} \times  \frac{\delta y}{\delta t} + \frac{\delta I}{\delta t} = 0$
+      </li>
+      <li>
+        $u = \frac{\delta x}{\delta t}$
+        et
+        $v = \frac{\delta y}{\delta t}$
+        soit
+        $E_xu + E_yv + E_t = 0$
+      </li>
+      <li>
+        $-\frac{E_t}{\sqrt{E_x^2 + E_x^2}}$
+      </li>
+    </ul>
   </section>
 
   <section>
     <h3>Problème d'ouverture</h3><br/>
-    <span class="italic">(Aperture Problem)</span>
+    <div class="italic">(Aperture Problem)</div>
+  </section>
+  <section>
+    <ul>
+      <li> <span class="bold">Manque d'informations</span> pour calculer un flux optique</li>
+      <li class="fragment">Une seule équation pour deux inconnues => <span class="bold">infinité de solutions</span></li>
+      <li class="fragment">Calcul uniquement possible de la composante de mouvement se trouvant dans la même direction que le gradient</li>
+      <li class="fragment">L’ouverture correspond à la “fenêtre” que chaque cellule a afin de voir la direction du mouvement d’un objet => pour un <span class="bold">mouvement ou une vitesse différente</span> il est possible d'obtenir un <span class="bold">même résultat</span></li>
+    </ul>
   </section>
   <section>
     <img src="http://sites.sinauer.com/wolfe4e/ch/08/act0802/app6-show.gif" alt="exampleApertureProblem">
-    <div class="italic">Exemple de representation de "l'aperture problem"</div>
+    <div class="italic">Exemple de representation du problème d'ouverture</div>
   </section>
 </section>

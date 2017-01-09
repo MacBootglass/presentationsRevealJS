@@ -6,11 +6,11 @@
   <section>
     <h3>Méthode de Horn-Schunck</h3>
     <ul>
-      <li class="fragment">Méthode différentielle</li>
-      <li class="fragment">Exploite la contrainte de régularité pour résoudre le problème d'ouverture</li>
-      <li class="fragment">Contrainte de régularité considérée sur l'ensemble de l'image => <span class="bold">minimise les distortions</span></li>
-      <li class="fragment">Produit des vecteurs de flux denses => <span class="bold">flux d'informations manquants dans les parties internes des éléments homogènes remplis à partir des mouvements sur leurs frontières</span></li>
-      <li class="fragment">Sensible au bruit</li>
+      <li class="fragment"><span class="bold">Méthode différentielle</span></li>
+      <li class="fragment">Exploite la contrainte de régularité pour la <span class="bold">résolution du problème d'ouverture</span></li>
+      <li class="fragment">Contrainte de régularité considérée sur l'ensemble de l'image => <span class="bold">minimisation des distortions</span></li>
+      <li class="fragment">Produit des vecteurs de flux denses => flux d'informations manquants dans les parties internes des éléments homogènes remplis à partir des mouvements sur leurs frontières</li>
+      <li class="fragment"><span class="bold">Sensible au bruit </span></li>
     </ul>
   </section>
   <section>
@@ -31,18 +31,18 @@
   <section>
     <h3>Méthode de Lucas-Kanade</h3>
     <ul>
-      <li class="fragment">Méthode différentielle</li>
+      <li class="fragment"><span class="bold">Méthode différentielle</span></li>
       <li class="fragment">Suppose que le flux est majoritairement constant dans le voisinage local du pixel considéré</li>
-      <li class="fragment">Résolution par la méthode des moindres carrés</li>
-      <li class="fragment">La combinaison des informations des pixels avoisinants permet souvent de résoudre le problème d'ouverture</li>
+      <li class="fragment">Résolution par la méthode des <span class="bold">moindres carrés</span></li>
+      <li class="fragment">La combinaison des informations des pixels avoisinants permet souvent la <span class="bold">resolution du problème d'ouverture</span></li>
       <li class="fragment">Suppose un faible déplacement relativement constant des points étudiés entre deux images consécutives</li>
     </ul>
   </section>
   <section>
     <h4>Améliorations et extentions de Lucas-Kanade</h4>
     <ul>
-      <li class="fragment">Analyse statistique pour détécter et réduire le poids des erreurs implicitement liées à la méthode des moindres carrés</li>
-      <li class="fragment">Si le déplacement des points étudiés et trop important, réutilisation de Lucas-Kanade sur une version réduite des images, ou extrapolation du déplacement calculé, afin de raffiner des estimations grossières</li>
+      <li class="fragment">Analyse statistique pour <span class="bold">détécter et réduire le poids des erreurs</span> implicitement liées à la méthode des moindres carrés</li>
+      <li class="fragment">Si le déplacement des points étudiés et trop bold, réutilisation de Lucas-Kanade sur une version réduite des images, ou extrapolation du déplacement calculé, afin de <span class="bold">raffiner des estimations grossières</span></li>
     </ul>
   </section>
   <section>
