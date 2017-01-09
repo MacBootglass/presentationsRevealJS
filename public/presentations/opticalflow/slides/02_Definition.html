@@ -1,6 +1,35 @@
 <section>
   <section>
     <h2>Définition</h2>
+      Dans le cas d’un capteur de vision, on peut considérer une matrice de cellules ayant chacune une intensité lumineuse associée.
+      Lors d’un changement de position ou de scène, la répartition des intensités lumineuses est modifiée aussi.
+      De plus, un vecteur vitesse est associé aussi à chaque pixel.
+      C’est ici que le flux optique entre en jeu, en calculant les changements entre les deux mesures et permet de déterminer par exemple la
+      vitesse du capteur, la direction du mouvement, la présence d’un obstacle.
+  </section>
+  <section>
+    <h3>Caractéristiques</h3>
+    <div class="colG">
+      <ul>
+        <li>S'apparente à de l'<span class="bold">estimation de mouvement</span></li>
+        <li class="fragment">Utilisation dans le domaine de la <span class="bold">vision par ordinateur</span></li>
+      </ul>
+      <img class="fragment" height="300px" src="https://cdn.meme.am/cache/instances/folder181/500x/74590181.jpg" alt="visionParOrdinateurMeme">
+    </div>
+    <div class="fragment definition">
+      La vision par ordinateur (aussi appelée vision artificielle ou vision numérique) est une branche de l'intelligence artificielle
+      dont le principal but est de permettre à une machine d'analyser, traiter et comprendre une ou plusieurs images prises par un
+      système d'acquisition (par exemple : caméras, etc.) <br/>
+      <span class="sourceDefinition">Wikipédia</span>
+    </div>
+  </section>
+  <section>
+    <ul>
+      <li>S'applique sur des <span class="bold">objets en mouvements</span> par rapport à un capteur, ou au <span class="bold">déplacement même du capteur</span></li>
+      <li class="fragment">Peuvent apporter d’importantes informations sur <span class="bold">l’emplacement spatial d'éléments</span> observés et leurs <span class="bold">taux de déplacement</span></li>
+      <li class="fragment">Détecter des discontinuités peut permettre la <span class="bold">segmentation d’images</span> en région, correspondant à différents éléments homogènes</li>
+      <li class="fragment">Ne peut pas être calculé sur un point donné d’une image indépendamment de son voisinage sans introduire des contraintes</li>
+    </ul>
   </section>
   <section>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Opticfloweg.png/2560px-Opticfloweg.png" alt="exampleOpticalFlow1">
@@ -10,16 +39,22 @@
     <img src="http://user.engineering.uiowa.edu/~dip/lecture/Motion/f14.6.gif" alt="exampleOpticalFlow2">
     <div class="italic">Autre exemple de representation de flux optique</div>
   </section>
+  <section>
+    <h3>Contraintes</h3>
+    <div class="">
+      add some content
+    </div>
+  </section>
 
   <section>
     <ul>
       <li>
         La luminosité sur un point donné d'un motif est constante, soit: $\frac{\delta I}{\delta t} = 0$
       </li>
-      <li>
+      <li class="fragment">
         On en déduit: $\frac{\delta I}{\delta x} \times  \frac{\delta x}{\delta t} +  \frac{\delta I}{\delta y} \times  \frac{\delta y}{\delta t} + \frac{\delta I}{\delta t} = 0$
       </li>
-      <li>
+      <li class="fragment">
         En posant:
         $u = \frac{\delta x}{\delta t}$
         et
@@ -27,7 +62,7 @@
         on obtient
         $E_xu + E_yv + E_t = 0$
       </li>
-      <li>
+      <li class="fragment">
         Soit la composante du mouvement dans la direction du gradient de luminosité $(E_x, E_y)$ vaut: $-\frac{E_t}{\sqrt{E_x^2 + E_x^2}}$
       </li>
     </ul>

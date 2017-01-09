@@ -7,7 +7,11 @@
 }
 
 .definition {
-  text-align: left;
+  font-size: 35px !important;
+  float: right;
+  text-align:justify !important;
+  width: calc(50% - 10px) !important;
+  padding-left: 10px !important;
 }
 
 .sourceDefinition {
