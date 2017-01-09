@@ -12,43 +12,44 @@
   </section>
 
   <section>
+    <ul>
+      <li>
+        La luminosité sur un point donné d'un motif est constante, soit: $\frac{\delta I}{\delta t} = 0$
+      </li>
+      <li>
+        On en déduit: $\frac{\delta I}{\delta x} \times  \frac{\delta x}{\delta t} +  \frac{\delta I}{\delta y} \times  \frac{\delta y}{\delta t} + \frac{\delta I}{\delta t} = 0$
+      </li>
+      <li>
+        En posant:
+        $u = \frac{\delta x}{\delta t}$
+        et
+        $v = \frac{\delta y}{\delta t}$
+        on obtient
+        $E_xu + E_yv + E_t = 0$
+      </li>
+      <li>
+        Soit la composante du mouvement dans la direction du gradient de luminosité $(E_x, E_y)$ vaut: $-\frac{E_t}{\sqrt{E_x^2 + E_x^2}}$
+      </li>
+    </ul>
+  </section>
+
+  <section>
     <h3>Contrainte de régularité</h3><br/>
     <div class="italic">(Smoothness Constraint)</div>
   </section>
   <section>
     <ul>
       <li>Contrainte de texture lisse/régulière</li>
-      <li class="fragment">Formule de minimisation du carré de la grandeur du gradient de la vitesse du flux optique</li>
-      <li class="fragment">Somme des carrés des Laplaciens des composantes x et y du flux</li>
-    </ul>
-  </section>
-  <section>
-    <ul>
-      <li>
+      <li class="fragment">
+        Une manière d'exprimer cette contrainte est de minimiser les variables suivantes: <br/>
         $(\frac{\delta u}{\delta x})^2 + (\frac{\delta u}{\delta y})^2$
         et
         $(\frac{\delta u}{\delta v})^2 + (\frac{\delta u}{\delta x})^2$
       </li>
-      <li>
+      <li class="fragment">Une autre manière est de mesurer la régularité des composantes Laplaciennes suivantes: <br/>
         $\bigtriangledown^2u = \frac{\delta^2 u}{\delta x^2} + \frac{\delta^2 u}{\delta y^2}$
         et
         $\bigtriangledown^2v = \frac{\delta^2 v}{\delta x^2} + \frac{\delta^2 v}{\delta y^2}$
-      </li>
-      <li>
-        $\frac{\delta I}{\delta t} = 0$
-      </li>
-      <li>
-        $\frac{\delta I}{\delta x} \times  \frac{\delta x}{\delta t} +  \frac{\delta I}{\delta y} \times  \frac{\delta y}{\delta t} + \frac{\delta I}{\delta t} = 0$
-      </li>
-      <li>
-        $u = \frac{\delta x}{\delta t}$
-        et
-        $v = \frac{\delta y}{\delta t}$
-        soit
-        $E_xu + E_yv + E_t = 0$
-      </li>
-      <li>
-        $-\frac{E_t}{\sqrt{E_x^2 + E_x^2}}$
       </li>
     </ul>
   </section>
