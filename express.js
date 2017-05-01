@@ -5,6 +5,7 @@ var port = 3000;
 
 app.use('/opticalflow', express.static('public/presentations/opticalflow'));
 app.use('/myOwnPortfolio', express.static('public/presentations/myOwnPortfolio'));
+app.use('/sie', express.static('public/presentations/sie'));
 app.use('/ressources', express.static('public/ressources'));
 app.use('/revealjs', express.static('node_modules/reveal.js'));
 app.use('/jquery', express.static('node_modules/jquery'));
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
     <ul>\
       <li><a href="/opticalflow">opticalflow</a></li>\
       <li><a href="/myOwnPortfolio">myOwnPortfolio</a></li>\
+      <li><a href="/sie">sie</a></li>\
     </ul>\
   ');
 });
