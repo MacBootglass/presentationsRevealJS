@@ -1,3 +1,5 @@
+rm -rf .git
+git init
 git config user.name "MacBootglass"
 git config user.email "thibault.theologien@insa-rouen.fr"
 git add -f public/*
