@@ -4,9 +4,9 @@ Reveal.initialize({
   slideNumber: true,
   keyboard: true,
   dependencies: [
-    { src: '../revealjs/plugin/markdown/marked.js' },
-    { src: '../revealjs/plugin/markdown/markdown.js' },
-    { src: '../revealjs/plugin/notes/notes.js', async: true },
-    { src: '../revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    { src: '/ressources/revealjs/plugin/markdown/marked.js' },
+    { src: '/ressources/revealjs/plugin/markdown/markdown.js' },
+    { src: '/ressources/revealjs/plugin/notes/notes.js', async: true },
+    { src: '/ressources/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
   ]
 });
