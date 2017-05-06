@@ -4,7 +4,7 @@ mkdir dist/revealjs
 mkdir dist/jquery
 cp -rf public/presentations dist/presentations
 cp -rf public/ressources dist/ressources
-cp public/index.html /dist
+cp public/index.html dist
 cp -rf node_modules/jquery dist/ressources/jquery
 cp -rf node_modules/reveal.js dist/ressources/revealjs
 cd dist
