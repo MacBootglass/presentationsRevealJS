@@ -2,7 +2,6 @@ sudo: required
 script:
   - chmod ugo+x ./deploy.sh
   - npm install
-after_success:
   - bash ./deploy.sh
 env:
   global:
