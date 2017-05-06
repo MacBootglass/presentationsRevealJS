@@ -1,12 +1,12 @@
 sudo: required
 script:
-  - chmod ugo+x ./deploy.sh
-  - npm install
-  - bash ./deploy.sh
+- chmod ugo+x ./deploy.sh
+- npm install
+- bash ./deploy.sh
 env:
   global:
-    - GH_REF: github.com/MacBootglass/gh-pages-presentations.git
-    - secure: "NEA7AYSMKZnvdRoSyqFOizlMJUPzwB8nTf9k5jotRo0ti1Cg7jp7d5cm152SBHxDxr5wQZUBdnkf9r8RL/v35R6/m3sAU/k3s0mwXKdeqOTz7z36Qb3oXA7+mDn9Yeg3V7lXDXBP3sDROrlKCGQfnW4fUwOP8Imd/kgspVP65xo8eQBDl3rXlVGX33P+K04utpZdbI8ojDaplMaDezR9YHMrGjSKbQhP++dCANJ3THt+AoqE2oS/ylmto/0D4+xDgoC9v6b/Qttcvq2+LuN3h3zNbumpLP5E17nnrKLx4cFJ/zhPHEMJpnkqSeGsamXxtp87HURvvqm/pDBWOE0p3IPUVGmIZRijl1NiZJ8FqYEgNoEGdt6RvjhCcd6xNOBx//6BLI3QsbxcwYPHne11bXLZxO31gPrFdK+FLbuftaX5qa4xAyKKTy26USYc8HKdxKRMrK+6IV7ikiBqPtBiB+4r2TlysrlR1Lu0XxkA+blENR/ggFYNUMpNE0qJhnWDc8rdHCsfpJclwblUddr5B9ot+ZvoXikGmd1PbH5DHA0zVFFY4rlEyOtwUGzHZML0NTj32Cm8UQN+hzlfzXWoGWGw42gBEt8iTegbGcnYuZKzBYZM3Evpo3jozL0EiwQT2meYYKhuieXFaVIm8gm34EqzrmE79V0AO6zzFnSGbDg="
+  - GH_REF: github.com/MacBootglass/gh-pages-presentations.git
+  - secure: BQ7WiU8IuijzfF85t8nxAaTZUhrE3/Y14Fgpuw6/MdGhKThVgmtl/aifNGoXDZ3ObJzbM/y643yTH9Fcs+86IG0TxbaE/VUHUJGWYHFFt/N/Is9XxL6IxEGLyMDcxhDmrWTupVCMvuEXOLbQXz0ZMqfkaL5Dl8pykdeTu+JQ/rWWj0pUReiuNH3+GMsrE5QDf5orzIFHy7PJkXaBkGr1o9M84XEpy2HxscVGdQeRogI82ccHHVQuKoIzY963lK1OOosvR2Q0whFVIFe905icgDLOscbPT/BPPUjjCJBeC1IfzmkcIZ/Im7WSvvlqv47OljMukwgAgprUpbTMZGlBIBGSmylII74uanGXFNIpKSmrWs535LD7OAEKdVpTGw6unDKE68EG2vcZtX/6DMT0JAaHrdiiH4ilIU9vqCPULF+TlnDdjL5bE4NvMR6hpI2F3Z1QQewGb8kDaiTqdRS5c7ZD3oQR7tBfsW6wwokY9yU7wJmMCdew2k16Q80evzvEs30EcX/3wJMce7ZKux2fuFUDcqo/wIkaDTjOB3n5VXRsTJXA/+ioCIy5N64rAFS2hFj2EdipapqU2/R0jiQmeACF21iqDfr/ywKRLXMpi6goX1bNDli7W+jscRXLmDlsgTu6bWe2qhdOHwcJS+maAy0Je2gmb4nTSSX+Yc/4GIw=
 notifications:
   email: false
 branches:
