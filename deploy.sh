@@ -10,10 +10,4 @@ cp -rf node_modules/reveal.js/js dist/ressources/revealjs/
 cp -rf node_modules/reveal.js/css dist/ressources/revealjs/
 cp -rf node_modules/reveal.js/plugin dist/ressources/revealjs/
 cd dist
-# git init
-# git config user.name "MacBootglass"
-# git config user.email "thibault.theologien@insa-rouen.fr"
-# git add .
-# git commit -m "Deployed with Travis and from presentationsRevealJS"
-# git push -fq --set-upstream "https://${GH_TOKEN}@${GH_REF}" master
 find . -type f -exec curl --user macbootglass-presentations\\ttheologien:${password} --ftp-create-dirs -T {} ftp://waws-prod-am2-027.ftp.azurewebsites.windows.net/site/wwwroot/{} \;

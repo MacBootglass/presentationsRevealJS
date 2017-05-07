@@ -4,10 +4,6 @@ script:
 - npm install
 - bash ./deploy.sh
 env:
-  global:
-  - GH_REF: github.com/MacBootglass/gh-pages-presentations.git
-  - secure: VnL2L+n37SR04WdZDl2/fyu8IBYdtzE8OR7sQ+tNAFScyd8YmEKaUCKKYPFf6HK0MFI/Nc2bJblXetd75gAHfy/crAEJaw5IxNOAxK+cQV6EWi4Up/eyTWm0etdLYdgYK5KWkOjGTmD+yeX+67xTKQY14p66c8FwHVx2zmc62h2Z4VbnO8g+Iyyljh+rAsT1OfaVvA7VA6RTCjAjXlkcYTw7R3G4giGwYw4q8/a2U6Jsi3n+nbKTiJqXpQojE0jbiIcdFAMyLzDFiuGonRF2NID8dJZ3GGoXS3E4DR4LjIKdN6IfJlfjJW7LFJYWR38qDAitawPjvh3sInpEz76Yb6qaM99BbW7xBBLwiDjdrkd7M/EbqI/KXu4wor/XvY7KHK22863UEK2IzKykVX/zuxN6NCMiBDtsJlAv67X+fuMdII5cwOSWgNu4Kp17bXdsy1rJwaeqZtCuu+MwKlbOVu0W8D10QymbFwUwj997CYItV5X+FtINfwUWm2ZcpgOyweRmWMes0e+IekQ/cq/1z73ihWr9/unSEBpnxvopirZqTIOabomdUjeiGhwNKbMr9F2uuHXew5LycwF5m9Ie++ekSf9RLNviF9mgeNtyCQL+YV7Wd3pMzSp0j6ZKNdz13sEjnHXtaKNgxZNoqhlat+bqfDMHnynnkGHmgWDWK2o=
-notifications:
   email: false
 branches:
   only:
