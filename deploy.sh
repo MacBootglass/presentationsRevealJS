@@ -14,4 +14,4 @@ cd dist
 # git add .
 # git commit -m "Deployed with Travis and from presentationsRevealJS"
 # git push -fq --set-upstream "https://${GH_TOKEN}@${GH_REF}" master
-find mydir -type f -exec curl --user macbootglass-presentations\\ttheologien:${password} --ftp-create-dirs -T {} ftp://waws-prod-am2-027.ftp.azurewebsites.windows.net/site/wwwroot/{}
+find . -type f -exec curl --user macbootglass-presentations\\ttheologien:${password} --ftp-create-dirs -T {} ftp://waws-prod-am2-027.ftp.azurewebsites.windows.net/site/wwwroot/{} \;

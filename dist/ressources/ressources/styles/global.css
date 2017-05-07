@@ -1,0 +1,100 @@
+.titre {
+  font-size: 250% !important;
+}
+
+.formuleAndDef {
+  margin-top: 50px !important;
+}
+
+.definition {
+  font-size: 35px !important;
+  float: right;
+  text-align:justify !important;
+  width: calc(50% - 10px) !important;
+  padding-left: 10px !important;
+}
+
+.sourceDefinition {
+  float: right;
+  font-style: italic !important;
+}
+
+.warning {
+  height: 40px;
+  width: auto;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+  margin-right: 10px!important;
+  margin-left: 0px!important;
+  border-width: 0px !important;
+  background-color: transparent !important;
+  vertical-align: bottom !important;
+}
+
+.credit{
+  width: 100%;
+  position:fixed !important;
+  bottom: 0px !important;
+  font-size: 20px !important;
+}
+
+.author{
+  margin: 10px !important;
+  float:right;
+}
+
+.school{
+  margin: 10px !important;
+  float:left;
+}
+
+.colD {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.colG {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.italic {
+  font-style:italic !important;
+}
+
+.bold {
+  font-weight:bold !important;
+}
+
+.image {
+  height: 40%;
+  width: 40%;
+}
+
+.tabulation {
+  padding-left: 50px;
+}
+
+.text {
+  text-align: justify;
+  width: 90%;
+}
+
+#alignMiddle:before {
+  height: 200px;
+  content: "";
+  width: 100%;
+  display: block;
+}
+
+/* Redifinition */
+.slide-number{
+  position: absolute;
+  height: 0px;
+  top:10px;
+  background-color: inherit !important;
+  font-size: 30px !important;
+  color: inherit !important;
+}

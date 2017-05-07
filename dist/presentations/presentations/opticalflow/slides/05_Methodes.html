@@ -1,0 +1,81 @@
+<section>
+  <section>
+    <h2>Principales méthodes</h2>
+  </section>
+
+  <section>
+    <h3>Méthode de Horn-Schunck</h3>
+    <ul>
+      <li class="fragment"><span class="bold">Méthode différentielle</span></li>
+      <li class="fragment">Exploite la contrainte de régularité pour la <span class="bold">résolution du problème d'ouverture</span></li>
+      <li class="fragment">Contrainte de régularité considérée sur l'ensemble de l'image => <span class="bold">minimisation des distortions</span></li>
+      <li class="fragment">$E(w) = \int(w.\nabla I+I_t)^2dxdy + \alpha^2\int||\nabla w||^2dxdy$</li>
+      <li class="fragment">Produit des vecteurs de flux denses => flux d'informations manquant dans les parties internes des éléments homogènes remplis à partir des mouvements sur leurs frontières</li>
+      <li class="fragment"><span class="bold">Sensible au bruit </span></li>
+    </ul>
+  </section>
+  <section>
+    <div class="colG">
+      <img src="https://i.ytimg.com/vi/KoMTYnlNNnc/hqdefault.jpg" alt="exampleHornSchunck1">
+    </div>
+    <div class="colD">
+      <img src="http://webserver2.tecgraf.puc-rio.br/~mgattass/ra/trb08/LeonardoMartins/trab_final_arquivos/image053.jpg" alt="exampleHornSchunck1">
+    </div>
+    <br/>
+    <div class="italic" style="float:left">Exemples de résultats obtenus à l'aide de la méthode de Horn-Schunck</div>
+  </section>
+  <section>
+    <img src="https://cdn.meme.am/cache/instances/folder609/57887609.jpg" alt="demonstrationMeme1">
+  </section>
+
+
+  <section>
+    <h3>Méthode de Lucas-Kanade</h3>
+    <ul>
+      <li class="fragment"><span class="bold">Méthode différentielle</span></li>
+      <li class="fragment">Suppose que le flux est majoritairement constant dans le voisinage local du pixel considéré</li>
+      <li class="fragment">Résolution par la méthode des <span class="bold">moindres carrés</span></li>
+      <li class="fragment">$E(w) = \sum_{y \in W_x} (I_2(x+w)-I_1(x))^2$ avec $W_x$ le voisinage local du pixel $x$</li>
+      <li class="fragment">La combinaison des informations des pixels avoisinants permet souvent la <span class="bold">résolution du problème d'ouverture</span></li>
+      <li class="fragment">Suppose un faible déplacement relativement constant des points étudiés entre deux images consécutives</li>
+    </ul>
+  </section>
+  <section>
+    <h4>Améliorations et extensions de Lucas-Kanade</h4>
+    <ul>
+      <li class="fragment">Analyse statistique pour <span class="bold">détécter et réduire le poids des erreurs</span> implicitement liées à la méthode des moindres carrés</li>
+      <li class="fragment">Si le déplacement des points étudiés et trop bold, réutilisation de Lucas-Kanade sur une version réduite des images, ou extrapolation du déplacement calculé, afin de <span class="bold">raffiner des estimations grossières</span></li>
+    </ul>
+  </section>
+  <section>
+    <img src="http://docs.opencv.org/trunk/opticalflow_lk.jpg" alt="exampleLucasKanade">
+    <div class="italic">Exemple de resultat obtenu à l'aide de la méthode de Lucas-Kanade</div>
+  </section>
+  <section>
+    <img src="https://cdn.meme.am/cache/instances/folder234/500x/51181234.jpg" alt="demonstrationMeme2">
+  </section>
+
+
+  <section>
+    <h3>Méthode de Farneback</h3>
+    <ul>
+      <li class="fragment">Contrairement à Lucas-Kanade => <span class="bold">calcul de tous les points</span></li>
+      <li class="fragment">
+        Utilisation de polynomes du second degré
+        $A$ une matrice symétrique, $b$ un vecteur et $c$ un scalaire
+        $f_1(x) = x^TAx + b^Tx + c$
+      </li class="fragment">
+      <li class="fragment">
+        On détermine par la suite le déplacement $d$ en résolvant
+        $f_2(x) = f_1(x-d)$
+      </li>
+    </ul>
+  </section>
+  <section>
+    <img class="colG image" src="http://docs.opencv.org/trunk/opticalfb.jpg" alt="exampleFarneback">
+    <div id="alignMiddle" class="colD italic">Exemple de resultat obtenu à l'aide de la méthode de Lucas-Kanade</div>
+  </section>
+  <section>
+    <img src="https://cdn.meme.am/cache/instances/folder28/500x/61085028.jpg" alt="demonstrationMeme3">
+  </section>
+</section>

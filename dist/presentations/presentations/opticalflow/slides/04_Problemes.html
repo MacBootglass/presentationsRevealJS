@@ -1,0 +1,27 @@
+<section>
+  <section>
+    <h2>Problèmes et limites</h2>
+    <ul>
+      <li>Performances de la segmentation en utilisant les différences entre deux images successives</li>
+      <li class="fragment">Retrouver les mouvements des objets relatifs à l’observateur à partir du flux optique</li>
+      <li class="fragment">Mathématiques pouvant être complexes en ne choisissant pas un bon système de référence</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Problème d'ouverture</h3><br/>
+    <div class="italic">(Aperture Problem)</div>
+  </section>
+  <section>
+    <ul>
+      <li> <span class="bold">Manque d'informations</span> pour calculer un flux optique</li>
+      <li class="fragment">Une seule équation pour deux inconnues => <span class="bold">infinité de solutions</span></li>
+      <li class="fragment">Calcul uniquement possible de la composante de mouvement se trouvant dans la même direction que le gradient</li>
+      <li class="fragment">L’ouverture correspond à la “fenêtre” que chaque cellule a afin de voir la direction du mouvement d’un objet => pour un <span class="bold">mouvement ou une vitesse différente</span> il est possible d'obtenir un <span class="bold">même résultat</span></li>
+    </ul>
+  </section>
+  <section>
+    <img src="http://sites.sinauer.com/wolfe4e/ch/08/act0802/app6-show.gif" alt="exampleApertureProblem">
+    <div class="italic">Exemple de représentation du problème d'ouverture</div>
+  </section>
+</section>
