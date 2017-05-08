@@ -89,6 +89,15 @@
   display: block;
 }
 
+.vertical-center {
+  margin-top: 15% !important;
+}
+
+.img-personnage {
+  height: 200px;
+  width: auto;
+}
+
 /* Redifinition */
 .slide-number{
   position: absolute;
