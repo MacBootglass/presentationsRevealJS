@@ -1,3 +1,9 @@
+.td-personnage {
+  vertical-align: middle !important;
+  width: 60% !important;
+  font-size: 90% !important;
+  text-align: center !important;
+}
 .titre {
   font-size: 250% !important;
 }
