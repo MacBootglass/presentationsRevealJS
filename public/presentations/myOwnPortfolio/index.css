@@ -21,3 +21,7 @@
   height: 200px;
   width: auto;
 }
+
+.image-questions {
+  width: 500px !important;
+}
