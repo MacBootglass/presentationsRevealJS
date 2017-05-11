@@ -2,3 +2,17 @@
   max-height: 500px;
   width: auto;
 }
+
+.image-title {
+  font-style: italic;
+}
+
+.image-exemple-rendu {
+  max-height: 500px !important;
+  vertical-align: middle !important;
+}
+
+.image-icone-tech {
+  height: 200px;
+  width: auto;
+}
