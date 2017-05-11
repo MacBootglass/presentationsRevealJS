@@ -12,6 +12,11 @@
   vertical-align: middle !important;
 }
 
+.image-gestion-projet {
+  max-height: 500px !important;
+  vertical-align: middle !important;
+}
+
 .image-icone-tech {
   height: 200px;
   width: auto;
