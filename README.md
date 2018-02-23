@@ -1,4 +1,6 @@
 # presentationsRevealJS
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MacBootglass/presentationsRevealJS.svg)](https://greenkeeper.io/)
 Présentations effectuées à l'aide de la librairie Reveal.js
 
 ## Pré-requis
